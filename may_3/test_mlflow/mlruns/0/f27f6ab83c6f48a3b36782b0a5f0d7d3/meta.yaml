@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sabih/Documents/emeritus/may_3/test_mlflow/mlruns/0/f27f6ab83c6f48a3b36782b0a5f0d7d3/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f27f6ab83c6f48a3b36782b0a5f0d7d3
+run_name: delightful-hare-950
+run_uuid: f27f6ab83c6f48a3b36782b0a5f0d7d3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1683175637142
+status: 1
+tags: []
+user_id: sabih

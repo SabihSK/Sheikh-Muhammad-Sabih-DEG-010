@@ -1,0 +1,7 @@
+name: wine-knn
+entry_points:
+  main:
+    parameters:
+      data_path: {type: string, default: 'data/wine.csv'}
+      k_neighbors: {type: int, default: 3}
+    command: "python train.py --data_path {data_path} --k {k_neighbors}"
