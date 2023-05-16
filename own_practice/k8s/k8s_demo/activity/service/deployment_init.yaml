@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mydeployment
+  labels:
+    app: mywebapp
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: mywebapp
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        app: mywebapp
+        tier: frontend
+    spec:
+      containers:
+      - name: mycontainer
+        image: flaskapp
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
+        env:
+        - name: BG_COLOR
+          value: '#12181b'
+        - name: FONT_COLOR
+          value: '#FFFFFF'
+        - name: CUSTOM_HEADER
+          value: 'Kubernetes Demo!'
+

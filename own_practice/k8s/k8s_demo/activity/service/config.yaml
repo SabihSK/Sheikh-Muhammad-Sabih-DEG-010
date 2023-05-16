@@ -1,0 +1,8 @@
+apiVersion: v1 
+kind: ConfigMap 
+metadata:
+  name: myconfigmapv1.1
+data:
+  BG_COLOR: '#12181b'
+  FONT_COLOR: '#FFFFFF'
+  CUSTOM_HEADER: 'Kubernetes Demo!'
